@@ -1,0 +1,10 @@
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum){
+    return [];
+  } else  {
+    let numArray = rangeOfNumbers(startNum, endNum -1)
+    numArray.push(endNum);
+    return numArray;
+    console.log(numArray);
+  }
+};
